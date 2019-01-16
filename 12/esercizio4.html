@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style>
+			body {
+				background-color:lightgreen;
+			}
+			@media only screen and (max-width: 500px) {
+				body {
+					background-color:lightblue;
+				}
+			}
+			@media only screen and (max-width: 768px) {
+				/* For mobile phones: */
+				[class*="col-"] {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<p>Resize the browser window. When the width of this document is less than 500 pixels, the background-color is "lightblue", otherwise it is "lightgreen".</p>
+		<p>Se ridimensiono la pagina cambia colore</p>
+	</body>
+</html>
